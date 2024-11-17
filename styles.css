@@ -68,14 +68,20 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('images/2hero-bg.png') center / cover no-repeat;
+    background: url('images/2hero-bg.png') center / contain no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     color: #ffffff;
-    height: 100vh;
+    height: 90vh; /* Adjusted height for better layout */
+    padding: 20px; /* Adds spacing for a cleaner look */
     display: flex;
     align-items: center;
+    justify-content: center; /* Centers content horizontally */
     position: relative;
     z-index: 1;
 }
+
 
 .hero::before {
     content: "";
